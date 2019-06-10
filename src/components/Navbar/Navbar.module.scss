@@ -1,0 +1,21 @@
+.Navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 65px;
+}
+
+.Navbar__logo {
+  height: 45px;
+  width: 45px;
+}
+
+.Navbar__links {
+  display: flex;
+  flex-direction: row;
+}
+
+.Navbar__link {
+  margin-left: 22px;
+}
