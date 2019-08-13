@@ -8,17 +8,14 @@ class AboutModal extends React.Component {
     return (
       <Modal {...this.props} size="lg" aria-labelledby="modal" centered>
         <Modal.Header closeButton>
-          <Modal.Title id="contained-modal-title-vcenter">
-            About Simple Writer
-          </Modal.Title>
+          <Modal.Title id="contained-modal-title-vcenter">About</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <p>
-            This is a simple writing application that let's you type out your
-            thoughts. Your work is autosaved.
+            This is a simple tool to help track interactions in a conversation.
             <br />
             <br />
-            Happy writing.
+            Have fun.
           </p>
         </Modal.Body>
         <Modal.Footer>

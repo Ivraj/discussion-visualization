@@ -2,7 +2,6 @@ import React from 'react';
 import styles from './Main.module.scss';
 
 import Navbar from '../../components/Navbar';
-import Writer from '../../components/Writer';
 import Footer from '../../components/Footer';
 import DiscussionGraph from '../../components/DiscussionGraph/DiscussionGraph';
 

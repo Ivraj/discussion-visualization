@@ -9,14 +9,9 @@ class DiscussionGraph extends React.Component {
     this.canvas = React.createRef();
 
     this.state = {
-      nodes: [{ id: 'Harry', color: 'red' }, { id: 'Sally' }, { id: 'Alice' }],
+      nodes: [{ id: 'Harry' }, { id: 'Sally' }, { id: 'Alice' }],
       links: [
-        {
-          source: 'Harry',
-          target: 'Sally',
-          color: 'red',
-          type: 'CURVE_SMOOTH',
-        },
+        { source: 'Harry', target: 'Sally' },
         { source: 'Harry', target: 'Alice' },
       ],
     };
@@ -43,7 +38,7 @@ class DiscussionGraph extends React.Component {
 
   addParticipant = () => {
     this.setState(state => {
-      nodes: state.nodes.push({ id: 'New Node' });
+      nodes: state.nodes.push({ id: 'New', cx: 50, cy: 50 });
     }, console.log(this.state.nodes));
   };
 
@@ -59,6 +54,7 @@ class DiscussionGraph extends React.Component {
       },
       link: {
         highlightColor: 'lightblue',
+        type: 'CURVE_SMOOTH',
       },
     };
 

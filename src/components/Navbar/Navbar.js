@@ -1,6 +1,5 @@
 import React from 'react';
 
-import logo from '../../images/logo.jpg';
 import AboutModal from '../AboutModal';
 
 import styles from './Navbar.module.scss';
@@ -14,9 +13,7 @@ class Navbar extends React.Component {
   render() {
     return (
       <div className={styles.Navbar}>
-        <a href="https://astrohaus.com/">
-          <img className={styles.Navbar__logo} src={logo} />
-        </a>
+        <div>Power Dynamics in Co-Design</div>
         <div className={styles.Navbar__links}>
           <div
             className={styles.Navbar__link}
